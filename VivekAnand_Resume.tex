@@ -1,0 +1,192 @@
+%-------------------------
+% Resume in Latex
+% Author : Vivek Anand
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/vivekzhere/}{\Large Vivek Anand T Kallampally }} & \\
+  & Developer, SAP Labs India\\
+  \href{https://www.linkedin.com/in/vivekzhere/}{linkedin.com/in/vivekzhere} & \href{mailto:vivekzhere@gmail.com}{vivekzhere@gmail.com} \\
+  \href{https://github.com/vivekzhere/}{github.com/vivekzhere} & +917899756010
+\end{tabular*}
+%-----------EDUCATION-----------------
+\section{Interest}
+Cloud Software, Data Structures and Algorithms, Operating Systems, Embedded Systems, Computational Complexity, Kubernetes, Cloud Foundry
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+    \resumeSubHeadingListStart
+        \resumeSubheading{SAP Labs }{Bangalore, India}{Developer}{July 2016 - Present}
+        \resumeItemListStart
+            \resumeItem{Virtual Machines as a Service}{\textit{Node.js, Golang, Cloud Foundry, Openstack, AWS}}\\
+            Implemented an OSB compliant service broker for providing Virtual Machines as a Service on Cloud Foundry PaaS. Used Openstack and AWS to provision various infrastructure resources. Used nodejs and golang for this project which ran for around 18 months.
+            \resumeItem{MongoDB as a Service}{\textit{Cloud Foundry, BOSH, Python, Shell, Ruby}}\\
+            Part of the team providing MongoDB as a service on SAP cloud platform based on Cloud Foundry for a short period. Worked on a proposal for backup and restore of sharded mongodb clusters.
+            \resumeItem{Postgresql as a Service}{\textit{Golang, AWS, Cloud Foundry, BOSH, Python, Shell, Ruby}}\\
+            Part of the team providing Postgresql as a service on Cloud Foundry for a short period. Implemented HA setup for postgresql on AWS multi az scenarios.
+            \resumeItem{Service Fabrik}{\textit{Cloud Foundry, Kubernetes, Golang, Node.js}}\\
+            Part of service fabrik team, which is a generic OSB compliant service broker. Implemented a component which enabled service fabrik to work with any Kubernetes operator to provision services on k8s. Used golang in this opensource project. Project is hosted at \textbf{\href{https://github.com/cloudfoundry-incubator/service-fabrik-broker} {github.com/cloudfoundry-incubator/service-fabrik-broker}}.
+            \resumeItem{Backing Services for Kubernetes}{\textit{Kubernetes, Golang, Kubernetes Operator}}\\
+            Currently part of postgresql for kubernetes team which is implementing a k8s operator for Postgresql on kubernetes.
+        \resumeItemListEnd
+        
+        \resumeSubheading
+        {Broadcom Communications Technologies Pvt. Ltd.}{Bangalore, India}
+        {Engineer Software Development}{July 2013 - July 2014}
+        
+        \begin{itemize}
+            \item Implemented a flow control module for Wifi Host Driver for PCIe based wifi chips
+            \item Implemented intra bss packet transfer in SoftAP mode for PCIe based wifi chips.
+            \item Implemented power save mode support in SoftAP mode for PCIe based wifi chips
+            \item Worked in designing the software architecture of a low power wifi chip.
+        \end{itemize}
+    \resumeSubHeadingListEnd
+     
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Technology, Kanpur }{2014 -- 2016}
+      {Master’s Degree in Computer Science and Engineering;  CPI :8/10}{}
+    \resumeSubheading
+      {National Institute of Technology, Calicut}{2009 -- 2013}
+      {Bachelor of Engineering in Computer Science;  CGPA: 8.84/10}{}
+      \resumeSubheading
+      {St. Antony’s Public School  (CBSE)}{1994 -- 2009}
+      {XII (AISSCE);  Score: 92.6\%}{X (AISSE));  Score: 90.2\%}
+  \resumeSubHeadingListEnd
+  
+    
+\section{M.Tech Thesis}
+    \resumeItemListStart
+        \item  Proved that for every language in NL there exists an unambiguous nondeterministic algorithm that requires $\mathcal{O}(\log{}^{2}n)$ space and simultaneously runs in polynomial time.
+        \item \textit{Vivek Anand T Kallampally, Raghunath Tewari.} \textbf{Trading Determinism for Time in Space Bounded Computations} In Proceedings of the $41^{st}$ International Symposium on Mathematical Foundations of Computer Science(\href{http://drops.dagstuhl.de/opus/volltexte/2016/6426/}{MFCS 2016}) [\href{https://arxiv.org/abs/1606.04649}{arxiv-1606.04649}]
+    \resumeItemListEnd
+
+
+ %-----------PROJECTS-----------------
+\section{Academic Projects}
+    \resumeItemListStart
+        \resumeItem{Experimental Operating System and Virtual Machine} {\textit{C, Lex, Yacc}}\\
+        Design and implementation of an experimental operating system and underlying architecture with basic features like multiprogramming, virtual memory and file system as part of developing a complete coursework for Operating Systems Laboratory. The project also included design and implementation of two language compilers, one for programming the operating system and one for programming application programs to run on this operating system. The project is hosted at \textbf{\href{http://xosnitc.github.io/}{xosnitc.github.io}}
+        \resumeItem{Complier} {\textit{C, Lex, Yacc}}\\
+        A compiler for a Simple Integer Language (SIL). SIL included two basic data types Integer and Boolean, features like if, if-else, while, arrays and functions. Functions take any number of arguments and return a single value. Arguments can be passed by value or by reference. Function recursion is also implemented.
+        \resumeItem{Bulls N Bears} {\textit{HTML, PHP, CSS, MySQL, Adobe Photoshop}}\\
+        This project delivered the website \textbf{\href{http://bullsnbears.tathva.org/}{bullsnbears.tathva.org}}. It was a stock market simulation game as part of Tathva 11. The virtual market was synchronized with the actual NIFTY market. The players could buy, sell, short sell and cover equities over a period of 1 month.
+        \resumeItem{Stegobot in Google Plus} {\textit{Python, PHP, MATLAB}}\\
+        Implemented a Trojan Horse which steals saved passwords from Google Chrome, encodes them in images and spreads through Google Plus. The passwords are retrieved using a Google Plus / Picasa Application, which scans shared pictures for stolen passwords.
+        \resumeItem{Emart} {\textit{HTML, PHP, CSS, PostgreSQL, Adobe Photoshop}}\\
+        A simple Internet Shopping Platform. This project was done as part of undergraduate DBMS course.
+        \resumeItem{Library Management Software}{C++}\\
+        A Library Management Software developed fully in C++. The database of the Software was implemented using the ‘file’ feature in C++. This project was done as part of Computer Science course of class XII.
+    \resumeItemListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+    \resumeItemListStart
+    \begin{multicols}{2}
+        \resumeItem{Languages}{Golang, Node.js, C}
+        \resumeItem{Web Scripting}{Basics of PHP, HTML and CSS}
+        \resumeItem{Parser Generator}{Lex, Yacc}
+        \resumeItem{OS}{Windows, Linux}
+    \end{multicols}
+    \resumeItemListEnd
+    
+%------------ Relevant Courses---------------
+\section{Relevant Courses}
+    \resumeItemListStart
+    \begin{multicols}{2}
+        \item Approximation Algorithms
+        \item Computational Complexity
+        \item Computational Number Theory and Algebra
+        \item Design and Analysis of Algorithms        
+        \item Linear Programming     
+        \item Maths for Computer Science
+    \end{multicols}
+    \resumeItemListEnd
+    
+    
+%--------Awards And Achievements------------
+\section{Awards And Achievements}
+\resumeItemListStart
+    \item  Filed for a patent around migrating virtual machines across IaaS
+    \item Was awarded the meritorious $0.1\%$ certificate by AISSCE and AISSE for scoring 100 in Mathematics
+    \item  GATE 2013 CSE All India Rank 42
+    \item GATE 2014 CSE All India Rank 86
+\resumeItemListEnd
+  
+
+
+%-----------------------
+\end{document}
