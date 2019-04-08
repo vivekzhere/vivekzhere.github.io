@@ -5,7 +5,5 @@
 layout: home
 ---
 
-# Home Page of Vivek Anand T Kallampally
-
 [CV](./VivekAnandTKallampally_Resume.pdf).
 
