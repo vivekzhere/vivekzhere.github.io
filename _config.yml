@@ -22,13 +22,14 @@ url: "http://vivekzhere.github.io/" # the base hostname & protocol for your site
 twitter_username: vivekzhere
 github_username:  vivekzhere
 
-logo: /assets/img/logo.png
-show_downloads: false
-google_analytics:
+#logo: /assets/img/logo.png
+#show_downloads: false
+#google_analytics:
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-minimal
+#theme: jekyll-theme-minimal
+theme: minima
 plugins:
   - jekyll-feed
 
