@@ -5,5 +5,5 @@
 layout: home
 ---
 
-# [CV](./VivekAnandTKallampally_Resume.pdf)
+[CV](./VivekAnandTKallampally_Resume.pdf)
 
